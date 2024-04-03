@@ -4,8 +4,8 @@ import smtplib
 import random
 import os
 
-STOCK = "TSLA"
-COMPANY_NAME = "Tesla Inc"
+STOCK = os.environ.get('STOCK')
+COMPANY_NAME = os.environ.get('COMPANY_NAME')
 STOCK_API_KEY = os.environ.get('STOCK_API_KEY')
 NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
 TODAY = datetime.datetime.now().date()
